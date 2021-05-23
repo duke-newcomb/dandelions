@@ -1,0 +1,385 @@
+:root {
+    --green: #5F9595;
+    --lt-green: #c2d7d0;
+    --pink: #ffb7a1;
+    --yellow: #fff386;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: rgb(237, 253, 227); */
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: white;
+}
+
+nav {
+    display: grid;
+    align-items: center;
+}
+
+nav > span {
+    padding-left: 20px;
+}
+
+.title {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub {
+    display: grid;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sub > h2 > a {
+    display: grid;
+    text-decoration: none;
+    font-size:xx-small;
+    font-style: normal;
+    font-weight: normal;
+    color: var(--green);
+    text-transform: uppercase;
+    padding-right: 20px;
+    justify-content: center;
+}
+
+nav > span {
+    font-size: x-large; 
+}
+
+nav > span > a {
+    text-decoration: none;
+    color: var(--green);
+}
+
+#logo {
+    width: auto;
+    max-width: 60px;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+main > img {
+    width: 93%;
+    max-width: 95%;
+    justify-self: center;
+    margin-top: 125px;
+}
+
+main > h2 {
+    width: 93%;
+    font-size: small;
+    padding-left: 20px;
+    margin-top: 5px;
+    justify-self: center;
+}
+
+main > h3 {
+    font-size: medium;
+    padding-left: 20px;
+    margin-top: 5px;
+    width: 93%;
+    justify-self: center;
+}
+
+main > p {
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 93%;
+    justify-self: center;
+}
+
+main > h4 {
+    font-size: x-small;
+    padding-left: 20px;
+    margin-top: 5px;
+    width: 93%;
+    justify-self: center;
+}
+
+main > hr {
+    width: 93%;
+    justify-self: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.recent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr;
+    margin-top: 25px;
+}
+
+#recent1 {
+    display: grid;
+}
+
+#recent1 > hr {
+    width: 93%;
+    justify-self: center;
+}
+
+.boldhr {
+    height: 0px;
+    border-top: 4px solid black;
+    width: 93%;
+    justify-self: center;
+}
+
+.thinhr {
+    height: 0px;
+    border-top: 1px solid black;
+}
+
+#recent1 > h2 {
+    width: 93%;
+    justify-self: center;
+}
+
+.recentdiv {
+    width: 93%;
+    justify-self: center;
+}
+
+.recentdiv > h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.recentdiv > h3 {
+    font-size: medium;
+    font-weight: normal;
+}
+
+.recent > hr {
+    width: 93%;
+    justify-self: center;
+}
+
+.mag {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto;
+    margin-bottom: 20px;
+}
+
+#mag1 {
+    width: 93%;
+    justify-self: center;
+}
+
+#mag2 {
+    width: 93%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+#mag2 > div > img {
+    width: 100%;
+    height: 100%;
+}
+
+#carrie {
+    max-width: 97%;
+}
+
+.tile {
+    width: 93%;
+    height: 300px;
+    justify-self: center;
+    margin-top: 5px;
+    color: white;
+    grid-template-rows: 25px 25px 25px;
+    align-content: center;
+}
+
+#sunset {
+    display: grid;
+    background-image: url("sunset.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+#beach {
+    display: grid;
+    background-image: url("beach.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+#waves {
+    display: grid;
+    background-image: url("waves.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+.tile > h2 {
+    font-size: small;
+    font-weight: normal;
+}
+
+.tile > h3 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.tile > h4 {
+    font-size: x-small;
+    font-weight: normal;
+}
+
+#contributors {
+    display: grid;
+    margin-top: 25px;
+    width: 93%;
+    justify-self: center;
+    grid-template-rows: auto auto auto;
+}
+
+#contributors > div {
+    display: grid;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 300px;
+    grid-template-rows: 75% 10% 10%;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding-top: 5px;
+}
+
+#contributors > div > img {
+    height: 100%;
+}
+
+#contributors > div > p {
+    width: 80%;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 93%;
+    justify-self: center;
+    margin-top: 30px;
+}
+
+#social {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+}
+
+#social > div {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content:center;
+}
+
+#social > div > img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer > div {
+    margin-top: 20px;
+}
+
+footer > h6 {
+    margin-top: 30px;
+}
+
+footer > div > ul {
+    margin-left: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+#hidden {
+    display: none;
+    margin-top: 60px;
+}
+
+#hidden > ul {
+    display: grid;
+    width: 93%;
+    justify-self: center;
+    grid-template-rows: auto auto auto auto auto;
+    margin-left: 20px;
+}
+
+#hidden > ul > li {
+    display: grid;
+    justify-self: center;
+    width: 93%;
+    list-style: none;
+    font-style: italic;
+}
+
+#hidden > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 
+Tablet **************************************************
+*
+*
+*********************************************************
+ */
+@media only screen and (min-width: 600px){
+    body {
+        
+    }
+}
