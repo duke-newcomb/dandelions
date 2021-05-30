@@ -1,8 +1,8 @@
 :root {
     --green: #5F9595;
     --lt-green: #c2d7d0;
-    --pink: #ffb7a1;
-    --yellow: #fff386;
+    --pink: #e98d71;
+    --yellow: #e0bd47;
 }
 
 *{
@@ -58,7 +58,7 @@ nav > span {
 .sub > h2 > a {
     display: grid;
     text-decoration: none;
-    font-size:xx-small;
+    font-size:small;
     font-style: normal;
     font-weight: normal;
     color: var(--green);
@@ -68,7 +68,7 @@ nav > span {
 }
 
 nav > span {
-    font-size: x-large; 
+    font-size:xx-large; 
 }
 
 nav > span > span {
@@ -79,7 +79,7 @@ nav > span > span {
 
 #logo {
     width: auto;
-    max-width: 90px;
+    max-width: 120px;
     height: auto;
 }
 
@@ -338,6 +338,7 @@ footer > div {
 
 footer > h6 {
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 footer > div > ul {
@@ -352,7 +353,7 @@ li {
     display: none;
     position: fixed;
     z-index: 1;
-    margin-top: 65px;
+    margin-top: 75px;
     background-color: white;
     width: 100%;
 }
@@ -377,7 +378,19 @@ li {
 
 #hidden > ul > li > a {
     text-decoration: none;
-    color: black;
+    color: var(--green);
+}
+
+.greenText{
+    color: var(--green);
+}
+
+.yellowText{
+    color: var(--yellow);
+}
+
+.peachText{
+    color: var(--pink);
 }
 
 /* 
