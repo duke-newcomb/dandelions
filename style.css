@@ -27,6 +27,7 @@ body {
 header {
     width: 100%;
     position: fixed;
+    z-index: 2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -70,14 +71,15 @@ nav > span {
     font-size: x-large; 
 }
 
-nav > span > a {
+nav > span > span {
     text-decoration: none;
     color: var(--green);
+    cursor: pointer;
 }
 
 #logo {
     width: auto;
-    max-width: 60px;
+    max-width: 90px;
     height: auto;
 }
 
@@ -348,7 +350,11 @@ li {
 
 #hidden {
     display: none;
-    margin-top: 60px;
+    position: fixed;
+    z-index: 1;
+    margin-top: 65px;
+    background-color: white;
+    width: 100%;
 }
 
 #hidden > ul {
@@ -365,6 +371,8 @@ li {
     width: 93%;
     list-style: none;
     font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #hidden > ul > li > a {
@@ -380,6 +388,12 @@ Tablet **************************************************
  */
 @media only screen and (min-width: 600px){
     body {
-        
+        background-color: green;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    body{
+        background-color: red;
     }
 }
