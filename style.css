@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* background-color: rgb(237, 253, 227); */
+    font-style: italic;
 }
 
 .container {
@@ -111,6 +111,8 @@ main > h3 {
     margin-top: 5px;
     width: 93%;
     justify-self: center;
+    font-weight: 500;
+    color: var(--green);
 }
 
 main > p {
@@ -127,6 +129,7 @@ main > h4 {
     margin-top: 5px;
     width: 93%;
     justify-self: center;
+    /* color: var(--pink); */
 }
 
 main > hr {
@@ -155,7 +158,7 @@ main > hr {
 
 .boldhr {
     height: 0px;
-    border-top: 4px solid black;
+    border-top: 1px solid black;
     width: 93%;
     justify-self: center;
 }
@@ -168,6 +171,7 @@ main > hr {
 #recent1 > h2 {
     width: 93%;
     justify-self: center;
+    font-weight: normal;
 }
 
 .recentdiv {
@@ -177,7 +181,8 @@ main > hr {
 
 .recentdiv > h2 {
     font-size: large;
-    font-weight: bold;
+    font-weight: normal;
+    color: var(--green);
 }
 
 .recentdiv > h3 {
@@ -203,6 +208,10 @@ main > hr {
     justify-self: center;
 }
 
+#mag1 > h2 {
+    font-weight: normal;
+}
+
 #mag2 {
     width: 93%;
     display: grid;
@@ -224,15 +233,15 @@ main > hr {
     width: 93%;
     height: 300px;
     justify-self: center;
-    margin-top: 5px;
+    margin-top: 30px;
     color: white;
     grid-template-rows: 25px 25px 25px;
     align-content: center;
 }
 
-#sunset {
+#tile1 {
     display: grid;
-    background-image: url("sunset.jpg");
+    background-image: url("prayer.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -241,9 +250,9 @@ main > hr {
     text-align: center;
 }
 
-#beach {
+#tile2 {
     display: grid;
-    background-image: url("beach.jpg");
+    background-image: url("ocean.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -252,9 +261,9 @@ main > hr {
     text-align: center;
 }
 
-#waves {
+#tile3 {
     display: grid;
-    background-image: url("waves.jpg");
+    background-image: url("bible.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -284,6 +293,16 @@ main > hr {
     width: 93%;
     justify-self: center;
     grid-template-rows: auto auto auto;
+}
+
+#contributors > h2 {
+    font-weight: normal;
+    color: var(--green);
+}
+
+#contributors > div > h3 {
+    font-weight: normal;
+    color: var(--green);
 }
 
 #contributors > div {
@@ -319,6 +338,10 @@ footer {
     display: grid;
     grid-template-rows: auto auto;
     justify-content: space-between;
+}
+
+#social > h2 {
+    font-weight: normal;
 }
 
 #social > div {
