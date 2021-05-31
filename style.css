@@ -17,8 +17,8 @@ body {
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     /* font-family: 'Courier New', Courier, monospace; */
     /* font-family: 'Didot', 'Didot LT STD', 'Hoefler Text', Garamond, 'Calisto MT', 'Times New Roman', serif; */
-    /* font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif'; */
-    font-family: 'Courier','Arial';
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    /* font-family: 'Courier','Arial'; */
 }
 
 .container {
@@ -93,26 +93,40 @@ main {
     grid-template-rows: auto auto auto auto auto auto;
 }
 
-main > img {
-    width: 93%;
+main > div {
+    width: 80%;
     max-width: 95%;
     justify-self: center;
-    margin-top: 125px;
+    margin-top: 135px;
+}
+
+main > div > a > img {
+    width: 100%;
+    height: 100%;
 }
 
 main > h2 {
-    width: 93%;
+    width: 80%;
     font-size: small;
     padding-left: 20px;
     margin-top: 5px;
     justify-self: center;
 }
 
+.noDecor {
+    text-decoration: none;
+    color:black;
+}
+
+.colorGreen{
+    color: var(--green);
+}
+
 main > h3 {
     font-size: medium;
     padding-left: 20px;
     margin-top: 5px;
-    width: 93%;
+    width: 80%;
     justify-self: center;
     font-weight: 500;
     color: var(--green);
@@ -122,7 +136,7 @@ main > p {
     padding-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 93%;
+    width: 80%;
     justify-self: center;
 }
 
@@ -130,13 +144,13 @@ main > h4 {
     font-size: x-small;
     padding-left: 20px;
     margin-top: 5px;
-    width: 93%;
+    width: 80%;
     justify-self: center;
     /* color: var(--pink); */
 }
 
 main > hr {
-    width: 93%;
+    width: 80%;
     justify-self: center;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -155,14 +169,14 @@ main > hr {
 }
 
 #recent1 > hr {
-    width: 93%;
+    width: 80%;
     justify-self: center;
 }
 
 .boldhr {
     height: 0px;
     border-top: 1px solid black;
-    width: 93%;
+    width: 80%;
     justify-self: center;
 }
 
@@ -172,29 +186,31 @@ main > hr {
 }
 
 #recent1 > h2 {
-    width: 93%;
+    width: 80%;
     justify-self: center;
     font-weight: normal;
 }
 
 .recentdiv {
-    width: 93%;
+    display: grid;
+    grid-template-columns: 10% auto;
+    width: 80%;
     justify-self: center;
 }
 
-.recentdiv > h2 {
+.recentdiv > div > h2 {
     font-size: large;
     font-weight: normal;
     color: var(--green);
 }
 
-.recentdiv > h3 {
+.recentdiv > div > h3 {
     font-size: medium;
     font-weight: normal;
 }
 
 .recent > hr {
-    width: 93%;
+    width: 80%;
     justify-self: center;
 }
 
@@ -207,7 +223,7 @@ main > hr {
 }
 
 #mag1 {
-    width: 93%;
+    width: 80%;
     justify-self: center;
 }
 
@@ -216,14 +232,14 @@ main > hr {
 }
 
 #mag2 {
-    width: 93%;
+    width: 80%;
     display: grid;
     grid-template-columns: 48% 48%;
     justify-self: center;
     justify-content: space-between;
 }
 
-#mag2 > div > img {
+#mag2 > div > a > img {
     width: 100%;
     height: 100%;
 }
@@ -232,9 +248,20 @@ main > hr {
     max-width: 97%;
 }
 
-.tile {
-    width: 93%;
+.linkDiv {
+    width: 80%;
+    justify-self: center;
     height: 300px;
+    align-content: center;
+}
+
+.hoverDiv{
+    opacity: 0.7;
+}
+
+.tile {
+    width: 100%;
+    height: 90%;
     justify-self: center;
     margin-top: 30px;
     color: white;
@@ -293,7 +320,7 @@ main > hr {
 #contributors {
     display: grid;
     margin-top: 25px;
-    width: 93%;
+    width: 80%;
     justify-self: center;
     grid-template-rows: auto auto auto;
 }
@@ -319,7 +346,7 @@ main > hr {
     padding-top: 5px;
 }
 
-#contributors > div > img {
+#contributors > div > a > img {
     height: 100%;
 }
 
@@ -333,7 +360,7 @@ footer {
     grid-template-columns: auto;
     justify-content: space-between;
     align-content: space-between;
-    width: 93%;
+    width: 80%;
     justify-self: center;
     margin-top: 30px;
 }
@@ -355,7 +382,7 @@ footer {
     justify-content:baseline;
 }
 
-#social > div > img {
+#social > div > a > img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -406,7 +433,7 @@ li {
 
 #hidden > ul {
     display: grid;
-    width: 93%;
+    width: 80%;
     justify-self: center;
     grid-template-rows: auto auto auto auto auto;
     margin-left: 20px;
@@ -415,7 +442,7 @@ li {
 #hidden > ul > li {
     display: grid;
     justify-self: center;
-    width: 93%;
+    width: 80%;
     list-style: none;
     font-style: italic;
     margin-top: 15px;
@@ -447,12 +474,12 @@ Tablet **************************************************
  */
 @media only screen and (min-width: 600px){
     body {
-        background-color: green;
+        /* background-color: green; */
     }
 }
 
 @media only screen and (min-width: 800px){
     body{
-        background-color: red;
+        /* background-color: red; */
     }
 }
