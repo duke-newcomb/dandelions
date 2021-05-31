@@ -338,7 +338,7 @@ main > hr {
 #contributors > div {
     display: grid;
     margin-top: 20px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     height: 300px;
     grid-template-rows: 75% 10% 10%;
     justify-content: space-between;
