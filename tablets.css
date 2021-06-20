@@ -1,12 +1,7 @@
-/* 
-Tablet **************************************************
-*
-*
-*********************************************************
- */
+
  @media only screen and (min-width: 600px){
     .mainrecent {
-        max-width: 100%;
+        width: 100%;
         display: grid;
         grid-template-columns: 75% 25%;
         grid-template-rows: auto;
@@ -20,18 +15,35 @@ Tablet **************************************************
         display: none;
     }
 
-    .tiles {
-        width: 80%;
-        justify-self: center;
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
+    #contributors {
+        display: grid;
+        grid-template-areas: "heading heading heading"
+                                "one two three";
         grid-template-columns: 33% 33% 33%;
-        grid-template-rows: auto;
     }
 
-    #contributors {
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: auto;
+    #contributors > h2 {
+        grid-area: heading;
+    }
+
+    .cOne {
+        grid-area: one;
+    }
+
+    .cTwo {
+        grid-area: two;
+    }
+
+    .cThree {
+        grid-area: three;
+    }
+
+    #contributors > div > a > img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        margin-top: 50px;
     }
 }
