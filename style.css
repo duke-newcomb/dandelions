@@ -14,11 +14,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    /* font-family: 'Courier New', Courier, monospace; */
-    /* font-family: 'Didot', 'Didot LT STD', 'Hoefler Text', Garamond, 'Calisto MT', 'Times New Roman', serif; */
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
-    /* font-family: 'Courier','Arial'; */
 }
 
 .container {
@@ -248,6 +244,12 @@ main > hr {
     max-width: 97%;
 }
 
+.tiles {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
 .linkDiv {
     width: 80%;
     justify-self: center;
@@ -464,22 +466,4 @@ li {
 
 .peachText{
     color: var(--pink);
-}
-
-/* 
-Tablet **************************************************
-*
-*
-*********************************************************
- */
-@media only screen and (min-width: 600px){
-    body {
-        /* background-color: green; */
-    }
-}
-
-@media only screen and (min-width: 800px){
-    body{
-        /* background-color: red; */
-    }
 }
